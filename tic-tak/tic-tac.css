@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/tic-tak/images/game.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 5px black;
+}
+#winner{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    padding-top: 20px;
+}
+.winner-msg {
+    display: none; 
+    width: 800px;
+    background-color: transparent;
+    backdrop-filter: blur(80px);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    text-align: center;
+    height: 220px;
+}
+
+.show {
+    display: block; 
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 360px;
+    margin: 1px auto;
+    grid-gap: 10px;
+     margin-top: 50px ;
+}
+.buttons button{
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    font-size: 3.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.tic-tac #reset button{
+    height: 50px;
+    width: 110px;
+    margin-top: 50px ;
+    margin-bottom: 50px ;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    background-color: rgb(252, 74, 74);
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+.tic-tac #reset button:hover{
+    box-shadow: 0 0 7px rgba(255, 255, 255);
+}
+
+#newgame {
+    height: 50px;
+    width: 160px;
+    margin-top: 50px ;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    background-color: rgb(252, 74, 74);
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px black;
+    cursor: pointer;
+}
+#newgame:hover{
+    box-shadow: 0 0 7px rgba(255, 255, 255);
+}
+.hide{
+    visibility: hidden;
+}
+
+.light{
+   
+    box-shadow: 0 0 5px inset !important;
+}
